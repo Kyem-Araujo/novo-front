@@ -7,7 +7,7 @@
                 <h1>Meus Produtos</h1>
             </div>
             <div class=" col-sm-6 pr-5 d-flex justify-content-end">
-                <a href="#" class="btn btn-primary" routerLink='criarProduto'>Adicionar produtos</a>
+                <a  class="btn btn-primary" routerLink='criarProduto'>Adicionar produtos</a>
             </div>
 
         </div>
@@ -21,7 +21,7 @@
                             <div class="card-body ">
                                 <h5 class="card-title">{{item.nomeProduto}}</h5>
                                 <p class="card-text">{{item.preco}}</p>
-                                <a href="#" class="btn btn-primary" [routerLink]="['verProduto', item.idProduto]">Ver
+                                <a class="btn btn-primary" [routerLink]="['verProduto', item.idProduto]">Ver
                                     Mais</a>
                             </div>
                         </div>

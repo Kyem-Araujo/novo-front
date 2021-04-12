@@ -16,11 +16,11 @@
                         Mude a ordem
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">De A a Z!</a>
-                        <a class="dropdown-item" href="#">De Z a A!</a>
-                        <a class="dropdown-item" href="#">Menor preço</a>
-                        <a class="dropdown-item" href="#">Maior preço</a>
-                        <a class="dropdown-item" href="#">Padrãozinho</a>
+                        <a class="dropdown-item" >De A a Z!</a>
+                        <a class="dropdown-item" >De Z a A!</a>
+                        <a class="dropdown-item" >Menor preço</a>
+                        <a class="dropdown-item" >Maior preço</a>
+                        <a class="dropdown-item" >Padrãozinho</a>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                             <div class="card-body ">
                                 <h5 class="card-title">{{item.nomeProduto}}</h5>
                                 <p class="card-text">{{item.preco}}</p>
-                                <a href="#" class="btn btn-primary" [routerLink]="['verProduto', item.idProduto]">Ver
+                                <a class="btn btn-primary" [routerLink]="['verProduto', item.idProduto]">Ver
                                     Mais</a>
                             </div>
                         </div>

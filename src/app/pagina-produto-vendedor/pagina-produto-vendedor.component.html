@@ -56,13 +56,13 @@
           <div class="d-flex justify-content-center">
 
             <div class="col-sm-4 d-flex justify-content-center">
-              <button href="#" type="button" class="btncomprar" [routerLink]="['alterarProduto', produto.idProduto]">
+              <button type="button" class="btncomprar" [routerLink]="['alterarProduto', produto.idProduto]">
                 Alterar produto
               </button>
             </div>
 
             <div class="col-sm-4 d-flex justify-content-center ">
-              <button href="#" (click)='deletarProduto()' type="button" >
+              <button  (click)='deletarProduto()' type="button" >
                 Excluir produto
               </button>
             </div>

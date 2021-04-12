@@ -7,6 +7,7 @@ import { Usuario } from '../model/Usuario';
 import { AlertasService } from '../service/alertas.service';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
+import { UsuarioService } from '../service/usuario.service';
 
 @Component({
   selector: 'app-pagina-produto',
@@ -26,6 +27,7 @@ export class PaginaProdutoComponent implements OnInit {
 
   constructor(private produtoService: ProdutoService, 
     private categoriaService: CategoriaService, 
+    private usuarioService: UsuarioService,
     private route: ActivatedRoute,
     private router: Router,
     private alertas: AlertasService) { }
@@ -55,14 +57,14 @@ export class PaginaProdutoComponent implements OnInit {
     })
   }
 
-  deletarProduto() {
-   
+  comprar() {
+    this.usuarioService.comprar(this.idProduto, environment.cpf).subscribe(() => {
+    })
+  }
 
-    this.produtoService.deletarProduto2(this.idProduto).subscribe(() => {
-      
-      this.alertas.showAlertSuccess('Produto deletado com sucesso!')
-      this.router.navigate(['/meuPerfil/meusProdutos'])
+  favoritar() {
+    this.usuarioService.favoritar(this.idProduto, environment.cpf).subscribe(() => {
+      this.alertas.showAlertSuccess('Um novo queridinho foi adicionado')
     })
   }
 }
-

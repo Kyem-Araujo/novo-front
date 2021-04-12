@@ -4,6 +4,7 @@ export const environment = {
   cpf: '',
   nomeUsuario: '',
   nomeSocial: '',
+  telefone: '',
   nomeCompletoUsuario: '',
   emailUsuario: '',
   senhaUsuario: '',

@@ -5,6 +5,7 @@ export class UsuarioLogin{
     public nomeSocial: string;
     public nomeCompletoUsuario: string;
     public nomeUsuario: string;
+    public telefone: string;
     public emailUsuario: string;
     public senhaUsuario: string;
     public contadorArvore: number;

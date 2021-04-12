@@ -107,7 +107,7 @@ body {
   background-repeat: no-repeat; /*cor de fundo*/
   background-size: cover;
   background-attachment: fixed;
-  min-height: 995px;
+  min-height: 1105px;
   
   
  
@@ -120,7 +120,7 @@ body {
   padding: 60px;
   border-radius: 4%;  
   width: 694px; /*largura*/
-  Height: 820px;
+  Height: 900px;
   left: 200px; /*movimento*/
   top: 100px; /*distacia do topo*/ 
   display:flex;
