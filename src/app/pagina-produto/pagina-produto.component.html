@@ -1,15 +1,16 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
 
-  <div class='container'>
+  <div class='container-fluid d-flex justify-content-center fonte' height="1200px">
 
-
-    <div class="card">
+    <div class=" card mb-5">
       <div class="row">
 
-        <div class="col-sm-9">
+        <div class="col-sm-9 d-flex justify-content-start">
           <h1>{{produto.nomeProduto}}</h1>
-
-
 
         </div>
 
@@ -64,21 +65,15 @@
 
         <div class="col-sm-12 row d-flex justify-content-around pt-5">
 
-          <div class="d-flex justify-content-end">
+          <div class="d-flex justify-content-center">
 
-            <div class="col-sm-4 d-flex justify-content-center">
+            <div class="col-sm-4 d-flex justify-content-start">
               <button (click)='favoritar()' type="button" class="button2" data-toggle="modal" data-target="#ExemploModalCentralizado">
                 Favoritar
               </button>
             </div>
 
-            <div class="col-sm-4 d-flex justify-content-center">
-              <button type="button" class="button2" data-toggle="modal" data-target="#ExemploModalCentralizado">
-                Ver loja
-              </button>
-            </div>
-
-            <div class="">
+            <div class="col-sm-4 d-flex justify-content-end">
               <!--Botão PopUp-->
               <button (click)='comprar()' type="button" class="btn btn-primary btncomprar" data-toggle="modal"
                 data-target="#ModalLongoExemplo5">
@@ -101,8 +96,8 @@
 
                     <!--facebook-->
                     <div>
-                      <img class="ico-contato " src="https://i.imgur.com/t3zXvGm.png" alt="Icone Facebook">
-                      <a class="textIco" href="https://www.facebook.com/"
+                      <img class="ico-contato " src="https://i.imgur.com/CSYUdcA.png" alt="Icone Usuario">
+                      <a class="textIco" href=""
                         target="_blank">{{produto.usuario.nomeUsuario}}</a>
                     </div>
                     <!--/facebook-->
@@ -119,7 +114,7 @@
                     <!--e-mail-->
                     <div>
                       <img class="ico-contato" src="https://i.imgur.com/JrO4uoS.png" alt="Icone E-mail">
-                      <a class="textIco" href="https://www.google.com" target="_blank">produto.usuario.emailUsuario</a>
+                      <a class="textIco" href="https://www.google.com" target="_blank">{{produto.usuario.emailUsuario}}</a>
                     </div>
                     <!--/e-mail-->
 
@@ -149,6 +144,9 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
+
+  <!-- /formulario cadastro-->
 </body>

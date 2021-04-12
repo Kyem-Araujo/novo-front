@@ -118,10 +118,10 @@ body {
 .card {
   background-color: white; /*posiçao o card e formato do card*/
   padding: 60px;
-  border-radius: 4%;  
+  border-radius: 0%;  
   width: 694px; /*largura*/
   Height: 900px;
-  left: 200px; /*movimento*/
+
   top: 100px; /*distacia do topo*/ 
   display:flex;
   

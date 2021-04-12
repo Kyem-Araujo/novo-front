@@ -32,10 +32,10 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 " *ngFor='let item of categoria.produtosCategoria | orderBy : key : reverse'>
                     <div class=" card-group text-center">
                         <div class="card">
-                            <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+                            <img class="card-img-top" src="{{item.fotoProduto1}}" alt="Imagem de capa do card">
                             <div class="card-body ">
                                 <h5 class="card-title">{{item.nomeProduto}}</h5>
-                                <p class="card-text">{{item.preco}}</p>
+                                <p class="card-text">R$ {{item.preco}}</p>
                                 <a class="btn btn-primary" [routerLink]="['verProduto', item.idProduto]">Ver
                                     Mais</a>
                             </div>
