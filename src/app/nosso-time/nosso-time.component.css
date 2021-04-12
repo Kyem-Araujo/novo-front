@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*Icones*/
+
 .ul-social-network{
     list-style: none;
     display:flex;
@@ -22,7 +22,7 @@
     hr{
     padding-top: 30px;
     }
-/*foto do Integrante*/
+
 .br-50{
     border-radius:50%;
 }
@@ -30,7 +30,7 @@
 .p-30{
     padding: 10px;
 }
-/*imagem 3D*/
+
 .flipper{
     width: 100%;
     height: 100%;
@@ -70,16 +70,17 @@
     top: 0;
   }
 
-/*borda do Card*/
+
 .borda {
     margin:10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     left: 10px;
     background: #FFFFFF;
     box-decoration-break: clone; 
+    min-height: 220px;
 }   
   
-/*nome do Integrante*/
+
     .nomeIntegrante {
         position:-webkit-sticky;
         text-align:center;
@@ -115,5 +116,3 @@
         font-weight: bold;
         font-family: 'Roboto', sans-serif;
       }
-
-     

@@ -2,11 +2,21 @@
 
   <div class='container'>
 
-
     <div class="card">
-      <div class="row">
 
-        <div class="col-sm d-flex justify-content-center">
+      <div class="row">
+        <div class="col-sm-9">
+          <h1> {{produto.nomeProduto}}</h1>
+
+
+        </div>
+
+        <div class="col-sm-3 d-flex justify-content-end text-nowrap">
+
+          <h1> R$ {{produto.preco}}</h1>
+
+        </div>
+        <div class="col-sm pt-4 d-flex justify-content-center">
 
           <div data-interval="false" id="carouselExampleFade" class="carousel carousel-fade img-fluid"
             data-ride="carousel">
@@ -23,20 +33,19 @@
                   src="{{produto.fotoProduto3}}"
                   alt="Terceiro Slide">
               </div>
-
               <div class="carousel-item ">
-                <iframe class="embed-responsive-item" width="560" height="315"
+                <iframe class="embed-responsive-item" width="500" height="500"
                   src="{{produto.videoProduto}}" title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon"style=" background-color: #F28482" aria-hidden="true"></span>
               <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon" style=" background-color: #F28482" aria-hidden="true"></span>
               <span class="sr-only">Próximo</span>
             </a>
           </div>
@@ -59,9 +68,16 @@
             </div>
           </div>
         </div>
-        <div class="text-justify pt-5">
 
-          <p>{{produto.descricao}}</p>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="text-justify pt-5">
+
+                <p>{{produto.descricao}}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
