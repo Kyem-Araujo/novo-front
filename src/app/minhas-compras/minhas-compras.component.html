@@ -11,7 +11,7 @@
         <div class="card mr-4 ml-4 pb-4">
             <div class=" card-group text-center"*ngFor='let item of usuario.minhasCompras | orderBy : key : reverse'>
                 <div class="card ">
-                    <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="{{item.fotoProduto1}}" alt="Imagem de capa do card" width="500pt" height="500pt">
                     <div class="card-body">
                         <h5 class="card-title">{{item.nomeProduto}}</h5>
                         <p class="card-text">{{item.preco}}.</p>
