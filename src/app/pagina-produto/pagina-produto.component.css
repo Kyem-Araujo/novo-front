@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif;
 
 body {
 background: #F7EDE2;
-background-repeat: no-repeat; /*cor de fundo*/
+background-repeat: no-repeat; 
 background-size: cover;
 background-attachment: fixed;
 min-height: 1200px;
@@ -22,13 +22,13 @@ min-height: 1200px;
 }
 
 .card {
-  background-color: white; /*posiçao o card e formato do card*/
+  background-color: white;
   padding: 60px;
-  border-radius: 0%;  
-  width: 994px; /*largura*/
-  height: 980px;
+  border-radius: 4%;  
+  width: 894px;
+  height: 1000px;
   
-  top: 100px; /*distacia do topo*/ 
+  top: 100px; 
   padding-bottom:5px;
 }
 /* tudo dentro do card*/
@@ -41,7 +41,7 @@ button{
   border-color: transparent;
   color: #FFFFFF;
   height: 42px;
-  width: 230px;
+  width: 200px;
   left: 752px;
   top: 886px;
   border-radius: 5px;
@@ -55,10 +55,157 @@ button{
   
 }
 
-.infoTexto{
-  margin-top: 90px;
-  margin:10px;
-  margin-bottom: 10px;
-  left: 10px;
+
+
+.container {
+  display: flex;
+  justify-content: center;    
+  width: 100%;
+  margin-top: 00px;
 }
+
+* {
+margin: 0;
+padding: 10;
+font-family: 'Roboto', sans-serif;
+}
+
+body {
+background: #F7EDE2;
+background-repeat: no-repeat; 
+background-size: cover;
+background-attachment: fixed;
+min-height: 1200px;
+
+
+}
+
+.card {
+  background-color: white; 
+  padding: 60px;
+  border-radius: 4%;  
+  width: 894px; 
+  height: 1000px;
+  
+  top: 100px; 
+  padding-bottom:5px;
+}
+/* tudo dentro do card*/
+
+
+/* teste*/
+
+.button2{
+  background-color: #F28482;
+  border-color: transparent;
+  color: #FFFFFF;
+  height: 42px;
+  width: 200px;
+  left: 752px;
+  top: 886px;
+  border-radius: 5px;
+  font-weight:bold;
+}
+
+.btncomprar{
+  background-color: #F6BD60;
+  font-weight:bold;
+  border-color: transparent;
+  
+}
+
+
+/* carol*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 10;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+.estiloDoPopUp{
+    background-color: #F7EDE2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px
+    }
+.containerPopUp{
+    display: flex;
+    justify-content: center;  
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ico-contato{
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 10px;
+    
+  }
+  .textIco{
+    margin-left: 10px;
+    padding: 10px;
+    color: #84A59D;
+  }  
+
+.text1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #84A59D;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.text2{
+
+    text-align: center;
+    margin-bottom: 20px;
+    color: #84A59D;
+    font-size: 16px;
+    margin-top: 2%;
+}
+
+.bt-retornar{
+    position: relative;
+    background-color: #F28482;
+    border-color: transparent;
+    color:#ffff;
+    padding: 7px;
+    justify-content: center;
+    font-size: 16px;
+    display: flex;
+    margin-top: 20px;
+    width: 230px;
+    height: 42px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+.bt-retornar:hover{
+    background-color:#ffff;
+    color: hsl(1, 81%, 73%);
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+
+.modal-dialog{
+    max-width: 33%; 
+    margin: 0 auto !important; 
+ }
+
+ .modal-body{
+    background-color: #F7EDE2;
+ }
 

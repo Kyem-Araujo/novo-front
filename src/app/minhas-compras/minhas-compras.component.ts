@@ -37,3 +37,4 @@ export class MinhasComprasComponent implements OnInit {
       })
     }
 }
+
