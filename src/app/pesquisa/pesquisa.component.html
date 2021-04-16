@@ -6,7 +6,7 @@
             <div class=" col-sm-6 pl-5 cor d-flex justify-content-start">
 
 
-                <h1> {{categoria.departamento}} </h1>
+                <h1> {{pesquisa}} </h1>
 
             </div>
             <div class=" col-sm-6 pr-5 d-flex justify-content-end">
@@ -21,17 +21,18 @@
                         <option class="dropdown-item" value="maiorPreco">Maior preço</option>
                         <option class="dropdown-item" value="padraozinho">Padrãozinho</option>
                     </select>
-
+    
                    
-
+    
                 </div>
             </div>
+    
 
         </div>
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 pb-4 " *ngFor='let item of categoria.produtosCategoria | orderBy : key : reverse'>
+                <div class="col-lg-4 col-md-4 col-sm-12 pb-4 " *ngFor='let item of listaProdutos | orderBy : key : reverse'>
                     <div class=" card-group text-center">
                         <div class="card">
                             <img class="card-img-top" src="{{item.fotoProduto1}}" alt="Imagem de capa do card" width="500pt" height="500pt">
@@ -46,6 +47,45 @@
                 </div>
                 
             </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 pb-4 " *ngFor='let item of listaProdutos | orderBy : key : reverse'>
+                    <div class=" card-group text-center">
+                        <div class="card">
+                            <img class="card-img-top" src="{{item.fotoProduto1}}" alt="Imagem de capa do card" width="500pt" height="500pt">
+                            <div class="card-body ">
+                                <h5 class="card-title">{{item.nomeProduto}}</h5>
+                                <p class="card-text">R$ {{item.preco}}</p>
+                                <a class="btn btn-primary" [routerLink]="['/verProduto', item.idProduto]">Ver
+                                    Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row"  *ngFor='let usuario of listaUsuario | orderBy : key : reverse'>
+                <div class="col-lg-4 col-md-4 col-sm-12 pb-4" *ngFor='let produto of usuario.produtoUsuario | orderBy : key : reverse' >
+
+                    <div class=" card-group text-center">
+                        <div class="card">
+                            <img class="card-img-top" src="{{produto.fotoProduto1}}" alt="Imagem de capa do card" width="500pt" height="500pt">
+                            <div class="card-body">
+                                <h5 class="card-title">{{produto.nomeProduto}}</h5>
+                                <p class="card-text">R$ {{produto.preco}}</p>
+                                <a class="btn btn-primary" [routerLink]="['/verProduto', produto.idProduto]">Ver
+                                    Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
         </div>
 
     </div>
