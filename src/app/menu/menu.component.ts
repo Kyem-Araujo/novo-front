@@ -19,6 +19,7 @@ export class MenuComponent implements OnInit {
   cheirinho: number = 3
   peleMacia: number = 4
   cuide: number = 5
+  search: string
 
   constructor(private authService: AuthService,
      private router: Router,
@@ -28,8 +29,12 @@ export class MenuComponent implements OnInit {
     window.scroll(0,0)
   }
 
-  pesquisar() {
+  campoPesquisa(event: any){
+    this.search = event.target.value
+  }
 
+  pesquisar(){
+    this.router.navigate(['/pesquisa', this.search])    
   }
   
   entrar() {

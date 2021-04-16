@@ -14,7 +14,9 @@ import { MinhasComprasComponent } from './minhas-compras/minhas-compras.componen
 import { NossoTimeComponent } from './nosso-time/nosso-time.component';
 import { PaginaProdutoVendedorComponent } from './pagina-produto-vendedor/pagina-produto-vendedor.component';
 import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.component';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+
 
 
 import { TelaFavoritosComponent } from './tela-favoritos/tela-favoritos.component';
@@ -45,7 +47,8 @@ const routes: Routes = [
   {path: 'menuLogado', component:MenuLogadoComponent},
   {path: 'contato', component:ContatoComponent},
   {path: 'quemSomos', component: QuemSomosComponent},
-  {path: 'criarCategoria', component: CriarCategoriaComponent}
+  {path: 'criarCategoria', component: CriarCategoriaComponent},
+  {path: 'pesquisa/:search', component: PesquisaComponent}
 ];
 
 @NgModule({

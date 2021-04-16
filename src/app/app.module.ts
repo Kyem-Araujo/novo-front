@@ -30,6 +30,7 @@ import { PaginaProdutoVendedorComponent } from './pagina-produto-vendedor/pagina
 import { AlertasComponent } from './alertas/alertas.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
 
 @NgModule({
@@ -60,6 +61,8 @@ import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.compo
     QuemSomosComponent,
     
     CriarCategoriaComponent,
+    
+    PesquisaComponent,
     
  ],
   imports: [

@@ -7,18 +7,41 @@
             <h1> Minhas Compras</h1>
         </div>
 
+        <div class=" col-sm-6 pr-5 d-flex justify-content-end">
+            <div class="dropdown">
+                <label class="text-center" for="dropdownMenuButton">Mude a Ordem</label>
+                <select [(ngModel)]='modeloOrdenado' (change)='organizar()' class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <option value="">Mude a Ordem</option>
+                    <option class="dropdown-item" value="alfabetico" >De A a Z!</option>
+                    <option class="dropdown-item" value="alfabeticoInverso">De Z a A!</option>
+                    <option class="dropdown-item" value="menorPreco">Menor preço</option>
+                    <option class="dropdown-item" value="maiorPreco">Maior preço</option>
+                    <option class="dropdown-item" value="padraozinho">Padrãozinho</option>
+                </select>
 
-        <div class="card mr-4 ml-4 pb-4">
-            <div class=" card-group text-center"*ngFor='let item of usuario.minhasCompras | orderBy : key : reverse'>
-                <div class="card ">
-                    <img class="card-img-top" src="{{item.fotoProduto1}}" alt="Imagem de capa do card" width="500pt" height="500pt">
-                    <div class="card-body">
-                        <h5 class="card-title">{{item.nomeProduto}}</h5>
-                        <p class="card-text">{{item.preco}}.</p>
-                        <a class="btn btn-primary" [routerLink]="['/verProduto', item.idProduto]">Falar com vendedor</a>
+               
+
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 pb-4 "  *ngFor='let item of usuario.minhasCompras | orderBy : key : reverse'>
+                    <div class=" card-group text-center">
+                        <div class="card">
+                            <img class="card-img-top" src="{{item.fotoProduto1}}" alt="Imagem de capa do card" width="500pt" height="500pt">
+                            <div class="card-body ">
+                                <h5 class="card-title">{{item.nomeProduto}}</h5>
+                                <p class="card-text">R$ {{item.preco}}</p>
+                                <a class="btn btn-primary" [routerLink]="['/verProduto', item.idProduto]">Ver
+                                    Mais</a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
+                
             </div>
         </div>
         <!--/cardCompras-->
