@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 <nav class="navbar navbar-expand-lg font-weight-bold navbar-light m-0" style="background-color:#F5CAC3 ">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
         aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+=======
+<nav class="navbar navbar-expand-lg navbar-light  text-nowrap font-weight-bold  " style="background-color: #F5CAC3">
+    <a class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+>>>>>>> a1db0b525e96b6e493495f4e5e0bfceb993b6959
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -21,8 +28,21 @@
                 <a class="  nav-link" routerLink='nossoTime'>Nosso time</a>
             </li>
 
+<<<<<<< HEAD
             <li class="nav-item">
                 <a class=" nav-link" routerLink='contato'>Contato</a>
+=======
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook" alt='Icone do Facebook'>
+                    <img class="fa" src="https://i.imgur.com/uHVSXNv.png" width="28px" height="28px">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram" alt='Icone do instagram'>
+                    <img class="fa" src="https://i.imgur.com/52SqSWU.png" width="28px" height="28px">
+                </a>
+>>>>>>> a1db0b525e96b6e493495f4e5e0bfceb993b6959
             </li>
 
             
@@ -70,19 +90,20 @@
 <!-- IconeUser-->
 <div class="container-fluid tamanho d-flex justify-content-end">
     <ul class="nav nav-tabs">
-  
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle adapt" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Olá, {{nomeUsuario}}</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" routerLink='meuPerfil'>Meu perfil</a>
-            <a class="dropdown-item" routerLink="meuPerfil/minhasCompras">Minhas compras</a>
-            <a class="dropdown-item" routerLink="meuPerfil/meusFavoritos">Meus favoritos</a>
-            <a class="dropdown-item" routerLink="meuPerfil/meusProdutos">Meus produtos</a>
-            <a class="dropdown-item" (click)='sair()'>Sair</a>
-          </div>
+            <a class="nav-link dropdown-toggle adapt" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Olá, {{nomeUsuario}}</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" routerLink='meuPerfil'>Meu perfil</a>
+                <a class="dropdown-item" routerLink="meuPerfil/minhasCompras">Minhas compras</a>
+                <a class="dropdown-item" routerLink="meuPerfil/meusFavoritos">Meus favoritos</a>
+                <a class="dropdown-item" routerLink="meuPerfil/meusProdutos">Meus produtos</a>
+                <a class="dropdown-item" (click)='sair()'>Sair</a>
+            </div>
         </li>
-        
-      </ul>
+
+    </ul>
 
 </div>
 <!-- /IconeUser-->
@@ -104,19 +125,19 @@
             </li>
 
             <li class="nav-item">
-                <a (mouseenter)='para2()'class="nav-link" [routerLink]="['/verCategoria', id]">Para o cabelo</a>
+                <a (mouseenter)='para2()' class="nav-link" [routerLink]="['/verCategoria', id]">Para o cabelo</a>
             </li>
 
             <li class="nav-item">
-                <a (mouseenter)='para3()'class="nav-link" [routerLink]="['/verCategoria', id]">Cheirinho bom</a>
+                <a (mouseenter)='para3()' class="nav-link" [routerLink]="['/verCategoria', id]">Cheirinho bom</a>
             </li>
 
             <li class="nav-item">
-                <a (mouseenter)='para4()'class="nav-link" [routerLink]="['/verCategoria', id]">Pele macia</a>
+                <a (mouseenter)='para4()' class="nav-link" [routerLink]="['/verCategoria', id]">Pele macia</a>
             </li>
 
             <li class="nav-item">
-                <a (mouseenter)='para5()'class="nav-link" [routerLink]="['/verCategoria', id]">Cuide-se</a>
+                <a (mouseenter)='para5()' class="nav-link" [routerLink]="['/verCategoria', id]">Cuide-se</a>
             </li>
 
             <li class="nav-item">
@@ -127,9 +148,10 @@
 
         <!--/Barra de pesquisa-->
         <div class="pesquisa d-flex justify-content-end" id="busca">
-            <input type="text" id="text" name="t" value placeholder="O que está procurando?" id="txtBusca"
-                class="clear-default-value search-fiel">
-            <i class="fa fa-search" aria-hidden="true"></i>
+
+            <input (input)="campoPesquisa($event)" name=pesquisa class="clear-default-value search-fiel" type="text"
+                id="text" name="t" (keyup.enter)="pesquisar()" placeholder="O que está procurando?">
+            <i class="fa fa-search" (click)='pesquisar' aria-hidden="true"></i>
 
         </div>
     </div>
@@ -137,5 +159,3 @@
 </nav>
 
 <!--/menuProdutos-->
-
-

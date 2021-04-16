@@ -13,12 +13,15 @@ export class MenuLogadoComponent implements OnInit {
   nomeUsuario = environment.nomeUsuario
   usuarioLogin: UsuarioLogin = new UsuarioLogin()
   id: number =0
+  search: string
 
   constructor(private router: Router) { }
   
 
   ngOnInit(): void {
   }
+
+
 
   sair() {
     this.router.navigate(['/paginaInicial'])
@@ -49,5 +52,13 @@ export class MenuLogadoComponent implements OnInit {
 
   para5() {
     this.id = 5
+  }
+
+  campoPesquisa(event: any){
+    this.search = event.target.value
+  }
+
+  pesquisar(){
+    this.router.navigate(['/pesquisa', this.search])    
   }
 }

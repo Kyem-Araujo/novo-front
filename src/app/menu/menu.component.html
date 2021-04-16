@@ -21,8 +21,21 @@
                 <a class="  nav-link" routerLink='nossoTime'>Nosso time</a>
             </li>
 
+<<<<<<< HEAD
             <li class="nav-item">
                 <a class=" nav-link" routerLink='contato'>Contato</a>
+=======
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" class="icoFacebook" alt='Icone do Facebook'>
+                    <img class="fa" src="https://i.imgur.com/uHVSXNv.png" width="28px" height="28px">
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" class="icoInstagram" alt='Icone do instagram'>
+                    <img class="fa" src="https://i.imgur.com/52SqSWU.png" width="28px" height="28px">
+                </a>
+>>>>>>> a1db0b525e96b6e493495f4e5e0bfceb993b6959
             </li>
 
             
@@ -113,10 +126,14 @@
         </ul>
 
         <!--/Barra de pesquisa-->
+
         <div class="pesquisa d-flex justify-content-end" id="busca">
-            <input type="text" id="text" name="t" value placeholder="O que está procurando?" id="txtBusca"
-                class="clear-default-value search-fiel" >
-            <i class="fa fa-search" aria-hidden="true"></i>
+
+          
+                <input (input)="campoPesquisa($event)" name=pesquisa class="clear-default-value search-fiel" type="text" id="text" name="t" (keyup.enter)="pesquisar()" data-toggle="modal" data-target="#ExemploModalCentralizado"
+                placeholder="O que está procurando?">                    
+                <i class="fa fa-search" (click)='pesquisar' aria-hidden="true"></i>
+          
 
         </div>
     </div>
@@ -130,7 +147,7 @@
     <!-- continuação para o modal do Botão para acionar o pop up de Login-->
 
     <div class="modal fade" id="ExemploModalCentralizado">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
 
             <div class="modal-content">
                 <div>
@@ -165,7 +182,8 @@
                                 <!--Botão de Entrar-->
                                 <div class="justify-center">
 
-                                    <button (click)='entrar()'  class="bt-entrar close" data-dismiss="modal" >Seja bem-vinde</button>
+                                    <button (click)='entrar()' class="bt-entrar close" data-dismiss="modal">Seja
+                                        bem-vinde</button>
 
                                 </div>
                                 <!--/Botão de Entrar-->
@@ -177,7 +195,8 @@
 
                                 <!--Botão de Cadastrar-->
                                 <div class="justify-center">
-                                    <button routerLink='/cadastrar' class="bt-entrar close" data-dismiss="modal">Venha para nossa Ecovila</button>
+                                    <button routerLink='/cadastrar' class="bt-entrar close" data-dismiss="modal">Venha
+                                        para nossa Ecovila</button>
                                 </div>
                                 <!--Botão de Cadastrar-->
 
