@@ -209,3 +209,6 @@ hr{
  .modal-body{
     background-color: #F7EDE2;
  }
+ .zero{
+     border: transparent;
+ }

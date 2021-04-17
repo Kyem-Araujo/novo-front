@@ -2,28 +2,30 @@
 <div class="container-fluid pt-5 pb-5" style="background-color: #F7EDE2">
     <div class="card pt-4 pb-4 m-4 ">
 
-
-        <div class="col-sm-3 ml-3 cor text-nowrap ">
-            <h1> Minhas Compras</h1>
-        </div>
-
-        <div class=" col-sm-6 pr-5 d-flex justify-content-end">
-            <div class="dropdown">
-                <label class="text-center" for="dropdownMenuButton">Mude a Ordem</label>
-                <select [(ngModel)]='modeloOrdenado' (change)='organizar()' class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <option value="">Mude a Ordem</option>
-                    <option class="dropdown-item" value="alfabetico" >De A a Z!</option>
-                    <option class="dropdown-item" value="alfabeticoInverso">De Z a A!</option>
-                    <option class="dropdown-item" value="menorPreco">Menor preço</option>
-                    <option class="dropdown-item" value="maiorPreco">Maior preço</option>
-                    <option class="dropdown-item" value="padraozinho">Padrãozinho</option>
-                </select>
-
-               
-
+        <div class="row">
+            <div class="col-sm-4 ml-3 cor  ">
+                <h1> Minhas compras</h1>
+            </div>
+    
+            <div class=" col-sm-6 pr-5 ml-auto d-flex justify-content-end">
+                <div class="dropdown">
+                    <label class="text-center" for="dropdownMenuButton"> Ordene</label>
+                    <select [(ngModel)]='modeloOrdenado' (change)='organizar()' class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <option value=""></option>
+                        <option class="dropdown-item" value="alfabetico" >De A a Z!</option>
+                        <option class="dropdown-item" value="alfabeticoInverso">De Z a A!</option>
+                        <option class="dropdown-item" value="menorPreco">Menor preço</option>
+                        <option class="dropdown-item" value="maiorPreco">Maior preço</option>
+                        <option class="dropdown-item" value="padraozinho">Padrãozinho</option>
+                    </select>
+    
+                   
+    
+                </div>
             </div>
         </div>
+       
 
 
         <div class="container-fluid">
