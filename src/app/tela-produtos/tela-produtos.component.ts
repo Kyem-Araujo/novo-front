@@ -39,49 +39,4 @@ export class TelaProdutosComponent implements OnInit {
     })
   }
 
-  organizar() {
-
-    if (this.modeloOrdenado == '' || this.modeloOrdenado == 'padraozinho') {
-      this.padrao()
-    }
-    else if (this.modeloOrdenado == 'alfabetico') {
-      this.alfabetoComeco()
-    }
-    else if (this.modeloOrdenado == 'alfabeticoInverso') {
-      this.alfabetoFim()
-    }
-    else if (this.modeloOrdenado == 'menorPreco') {
-      this.menorPreco()
-    }
-    else if (this.modeloOrdenado == 'maiorPreco') {
-      this.maiorPreco()
-    }
-
-  }
-
-  padrao() {
-    this.key = 'idProduto';
-    this.reverse = true;
-  }
-
-  alfabetoComeco() {
-    this.key = 'nomeProduto';
-    this.reverse = false;
-  }
-
-  alfabetoFim() {
-    this.key = 'nomeProduto';
-    this.reverse = true;
-  }
-
-  maiorPreco() {
-    this.key = 'preco';
-    this.reverse = true;
-  }
-
-  menorPreco() {
-    this.key = 'preco';
-    this.reverse = false;
-  }
-
 }
