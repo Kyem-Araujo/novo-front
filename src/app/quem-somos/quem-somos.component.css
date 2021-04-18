@@ -1,186 +1,97 @@
-ul.social-networks li{
-    display: inline;
-    margin: 0;
-    padding: 5px;
-    
-
-}
-
-
-ul.social-networks{
-    list-style: none;
-       padding: 0;
-       
-}
-
-.fa{
-    font-size: 15pt;
-    color: black;
-    padding:5px;
-    }
-
-.fa-facebook-square:hover{
-color:#3b5998;
-
-}
-
-.fa-instagram:hover{
-    color:#C13584;
-    }
-
-.fa-twitter-square:hover{
-    color:#143c91;
-    }
-    
-
- .fa-heart-o:hover{
-    color: darkred;
- }
-
-.altera-menu {
-    font-style: normal; /*caso queira deixar alterar o estilo da fonte*/
-    font-size: 1.1rem; /*caso queira alterar o tamanho da fonte*/
-    font-family: Roboto, sans-serif; /*caso queira mudar o tipo de fonte*/
-    
- }
-
- .cor{
-    color: #84A59D;
-}
-
-
-
-.card-body{
-   background-color: #F6BD60;
-}
-
-/* caixa de pesquisa */
-#busca{
-    background-color: white;
-    border:initial;
-    width: 300px;
-    float: left;
-    border:0;
-}
-
-#txtBusca{
-    float: left;
-    background-color: white;
-    padding-left: 5px;
-    font-style: italic;
-    font-size: 18px;
-    border: none;
-    height: 32px;
-    width: 260px;
-    font-family: Roboto, sans-serif;
-}
-
-
-/*CONTEUDO DO CARD*/
-.card {
-  
-  background-color: white; 
-  padding: 80px;
-  box-shadow: 3px 3px 1px 0px #84A59D; 
-  width: 900px; 
-  Height: 900px;
-  left: 0px; 
-  top: 100px;
-  
-}
-
-/*FIM DO CONTEUDO DO CARD*/
-
 .body{
 
-min-height: 1100px;
-background-color : #F7EDE2;
-background-repeat: no-repeat; 
-background-size: cover;
-background-attachment: fixed;
-
-}
-
-
-
-.gif{
-    height:500px ;
-    width: 500px ;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*inicio do rodape */
-
-.Cor{
-    color: #84A59D;
-}
-
-.conteudo {
-    display: flex;
-}
-
-ul.social-networks li{
-    display: inline;
-    margin: 0;
-    padding: 5px;
-}
-
-
-ul.social-networks{
-    list-style: none;
-       padding: 0;
-}
-
-.fa{
-    font-size: 15pt;
-    color: black;
-    padding:5px;
-    }
-
-.fa-facebook-square:hover{
-color:#3b5998;
-}
-
-.fa-instagram:hover{
-    color:#C13584;
-    }
-
-.fa-twitter-square:hover{
-    color:#143c91;
+    min-height: 1100px;
+    background-color : #F7EDE2;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+   
     }
     
- .fa-heart-o{
-    color: darkred;
- }
-
- .tamanho{
-    font-size: 10px;
+    
+    
+    .gif{
+        height:500px ;
+        width: 500px ;
+    }
+    
+    
+    /*inicio do rodape */
+    
+    .Cor{
+        color: #84A59D;
+    }
+    
+    .conteudo {
+        display: flex;
+    }
+    
+    ul.social-networks li{
+        display: inline;
+        margin: 0;
+        padding: 5px;
+    }
+    
+    
+    ul.social-networks{
+        list-style: none;
+           padding: 0;
+    }
+    
+    .fa{
+        font-size: 15pt;
+        color: black;
+        padding:5px;
+        }
+    
+    .fa-facebook-square:hover{
+    color:#3b5998;
+    }
+    
+    .fa-instagram:hover{
+        color:#C13584;
+        }
+    
+    .fa-twitter-square:hover{
+        color:#143c91;
+        }
+        
+     .fa-heart-o{
+        color: darkred;
+     }
+    
+     .tamanho{
+        font-size: 10px;
+    }
+    
+    .altera-fontes {
+        font-style: normal; 
+        font-size: 0.95rem; 
+        font-family: Roboto, sans-serif; 
+     }
+    
+   
+    
+    .h1-titulo{
+        font-family:Roboto ;
+        color:#84A59D ;
+        padding-left: 5px ;
+        margin-left:10px
+    }
+    
+    .textinho{
+        font-family:Roboto ;
+        color:#84A59D ;
+        font-size: 1.2rem;
+        padding-left: 5px ;
+        text-align: justify;
+        margin-left:10px ;
+     
+    }
+.card{
+    border: transparent;
 }
-
-.altera-fontes {
-    font-style: normal; /*caso queira deixar alterar o estilo da fonte*/
-    font-size: 0.95rem; /*caso queira alterar o tamanho da fonte*/
-    font-family: Roboto, sans-serif; /*caso queira mudar o tipo de fonte*/
- }
-
-/*fim do rodape*/
-
-.h1-titulo{
-    font-family:Roboto ;
-    color:#84A59D ;
-}
-
-.textinho{
-    font-family:Roboto ;
-    color:#84A59D ;
-    font-size: 1.2rem;
+img{
+    margin-left: auto;
+    margin-right: auto
 }

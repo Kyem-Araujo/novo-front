@@ -33,7 +33,7 @@ export class AlterarprodutoComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
     this.findAllCategorias()
-    let id = this.route.snapshot.params['id']
+    let id = this.route.snapshot.params['idProdutoAlterado']
     this.findByIdProduto
   }
 

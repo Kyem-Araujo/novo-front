@@ -107,7 +107,7 @@ body {
   background-repeat: no-repeat; /*cor de fundo*/
   background-size: cover;
   background-attachment: fixed;
-  min-height: 995px;
+  min-height: 1105px;
   
   
  
@@ -118,10 +118,10 @@ body {
 .card {
   background-color: white; /*posiçao o card e formato do card*/
   padding: 60px;
-  border-radius: 4%;  
+  border-radius: 0%;  
   width: 694px; /*largura*/
-  Height: 820px;
-  left: 200px; /*movimento*/
+  Height: 900px;
+
   top: 100px; /*distacia do topo*/ 
   display:flex;
   

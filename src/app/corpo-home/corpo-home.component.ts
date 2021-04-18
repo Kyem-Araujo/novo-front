@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Categoria } from '../model/Categoria';
+import { Produto } from '../model/Produto';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-corpo-home',
@@ -6,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./corpo-home.component.css']
 })
 export class CorpoHomeComponent implements OnInit {
+listaProdutos: Produto[]
+key='data'
+reverse=true
 
-  constructor() { }
+constructor (private produtoService: ProdutoService) {
+}
 
-  ngOnInit(): void {
-  }
+ngOnInit() {
+this.findAllProdutos()
 
+
+}
+findAllProdutos() {
+  this.produtoService.getAllProducts().subscribe((resp: Produto[]) =>{
+    this.listaProdutos = resp
+  })
+}
 }

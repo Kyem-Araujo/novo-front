@@ -27,7 +27,7 @@ min-height: 1200px;
   border-radius: 4%;  
   width: 894px;
   height: 1000px;
-  left: 374px; 
+  
   top: 100px; 
   padding-bottom:5px;
 }
@@ -86,7 +86,7 @@ min-height: 1200px;
   border-radius: 4%;  
   width: 894px; 
   height: 1000px;
-  left: 374px;
+  
   top: 100px; 
   padding-bottom:5px;
 }
@@ -209,4 +209,3 @@ min-height: 1200px;
     background-color: #F7EDE2;
  }
 
- 

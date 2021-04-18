@@ -6,7 +6,7 @@
 
 <body>
 
-    <div class='container fonte' height="1000px">
+    <div class='container-fluid d-flex justify-content-center fonte' height="1200px">
      
         <div class=" card"  >
             <h1> Cadastre-se </h1>
@@ -23,7 +23,12 @@
             </div>
 
             <div class="label-float d-flex justify-content-center">
-                <input [(ngModel)]='usuario.nomeUsuario' type="text" id="nomeSocial" placeholder="" required>
+                <input [(ngModel)]='usuario.telefone' type="text" id="telefone" placeholder="" required>
+                <label for="telefone">Telefone/Celular(com DDD)*</label>
+            </div>
+
+            <div class="label-float d-flex justify-content-center">
+                <input [(ngModel)]='usuario.nomeUsuario' type="text" id="nomeUsuario" placeholder="" required>
                 <label for="nomeSocial">Nome de usuário*</label>
             </div>
 

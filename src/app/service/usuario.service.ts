@@ -43,6 +43,16 @@ export class UsuarioService {
     return this.http.put<Usuario>('http://localhost:8080/usuario/alterar/senha', usuario, this.token)
   }
 
+  comprar(idProduto: number, cpfUsuario: string) {
+    return this.http.put<Usuario>(`http://localhost:8080/usuario/produto/compra/${idProduto}/${cpfUsuario}`, this.token)
+
+  }
+
+  favoritar(idProduto: number, cpfUsuario: string): Observable<Usuario> {
+    return this.http.put<Usuario>(`http://localhost:8080/usuario/produto/favoritar/${idProduto}/${cpfUsuario}`, this.token)
+
+  }
+
   deletarConta(cpfUsuario: string) {
     return this.http.delete<Usuario>(`http://localhost:8080/usuario/${cpfUsuario}`, this.token) 
   }

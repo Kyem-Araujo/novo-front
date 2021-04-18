@@ -26,8 +26,12 @@ import { ContatoComponent } from './contato/contato.component';
 import { MenuLogadoComponent } from './menu-logado/menu-logado.component';
 import { PaginaProdutoComponent } from './pagina-produto/pagina-produto.component';
 import { PaginaProdutoVendedorComponent } from './pagina-produto-vendedor/pagina-produto-vendedor.component';
-import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+
 import { AlertasComponent } from './alertas/alertas.component';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
+
 
 @NgModule({
   declarations: [
@@ -51,8 +55,15 @@ import { AlertasComponent } from './alertas/alertas.component';
     MenuLogadoComponent,
     PaginaProdutoComponent,
     PaginaProdutoVendedorComponent,
+    
+    AlertasComponent,
+    
     QuemSomosComponent,
-    AlertasComponent
+    
+    CriarCategoriaComponent,
+    
+    PesquisaComponent,
+    
  ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TelaFavoritosComponent } from './tela-favoritos.component';
+import { CriarCategoriaComponent } from './criar-categoria.component';
 
-describe('TelaFavoritosComponent', () => {
-  let component: TelaFavoritosComponent;
-  let fixture: ComponentFixture<TelaFavoritosComponent>;
+describe('CriarCategoriaComponent', () => {
+  let component: CriarCategoriaComponent;
+  let fixture: ComponentFixture<CriarCategoriaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TelaFavoritosComponent ]
+      declarations: [ CriarCategoriaComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TelaFavoritosComponent);
+    fixture = TestBed.createComponent(CriarCategoriaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

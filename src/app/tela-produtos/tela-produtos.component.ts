@@ -15,6 +15,7 @@ export class TelaProdutosComponent implements OnInit {
 
   produto: Produto = new Produto()
   listaMeusProdutos: Produto[]
+  modeloOrdenado: string
 
   usuario: Usuario = new Usuario()
   idUsuario = environment.cpf
