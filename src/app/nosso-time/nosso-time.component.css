@@ -17,8 +17,8 @@
         position:relative;
         left: 70px;
         right: 30px;
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         padding: 10px;
                 
     }
@@ -75,7 +75,7 @@
     margin:10px;
     left: 10px;
     background: #FFFFFF;
-    height: 550px;
+    height: 750px;
     border-radius: 0px;
     
 }   
@@ -101,7 +101,7 @@
           font-size: 1vmax;
           margin-left: 50px;
           margin-right: 50px;
-          margin-top: 40px;
+          margin-top: 110px;
           font-family: 'Roboto', sans-serif;
           text-align: justify;
           
