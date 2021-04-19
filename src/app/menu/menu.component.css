@@ -111,13 +111,13 @@ estiloDoPopUp{
 .containerPopUp{
      display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 15px;
+   
+    margin: 1%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1{
+   
     text-align: center;
     margin-bottom: 20px;
     color: #84A59D;
@@ -127,6 +127,7 @@ h1{
 }
 
 .label-float input{
+   
     width: 100%;
     padding: 5px 5px;
     display: inline-block;
@@ -207,6 +208,7 @@ hr{
  }
 
  .modal-body{
+    
     background-color: #F7EDE2;
  }
  .zero{

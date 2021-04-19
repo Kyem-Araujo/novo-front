@@ -8,20 +8,23 @@
             </div>
     
             <div class=" col-sm-6 pr-5 ml-auto d-flex justify-content-end">
+                <h5 class="text-center cor pr-2"> Mude a ordem </h5>
                 <div class="dropdown">
-                    <label class="text-center" for="dropdownMenuButton"> Ordene</label>
-                    <select [(ngModel)]='modeloOrdenado' (change)='organizar()' class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+
+                    <label class="text-center" for="dropdownMenuButton"></label>
+                    <select [(ngModel)]='modeloOrdenado' (change)='organizar()'
+                        class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <option value=""></option>
-                        <option class="dropdown-item" value="alfabetico" >De A a Z!</option>
+
+                        <option class="dropdown-item" value="alfabetico">De A a Z!</option>
                         <option class="dropdown-item" value="alfabeticoInverso">De Z a A!</option>
                         <option class="dropdown-item" value="menorPreco">Menor preço</option>
                         <option class="dropdown-item" value="maiorPreco">Maior preço</option>
                         <option class="dropdown-item" value="padraozinho">Padrãozinho</option>
                     </select>
-    
-                   
-    
+
+
+
                 </div>
             </div>
         </div>
