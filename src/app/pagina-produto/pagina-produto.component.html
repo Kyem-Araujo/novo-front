@@ -1,30 +1,20 @@
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<div class="container-fluid d-flex justify-content-center pt-5 pb-5" style="background-color: #F7EDE2;
+">
 
-<body>
+  <div class="card  ">
+    <div class="card-body">
 
-  <div class='container-fluid d-flex justify-content-center fonte' height="1200px">
+      <div class=row>
 
-    <div class=" card mb-5">
-      <div class="row">
-
-        <div class="col-sm-9 d-flex justify-content-start">
+        <div class="col-md-9">
           <h1>{{produto.nomeProduto}}</h1>
-
         </div>
-
-        <div class="col-sm-3 d-flex justify-content-end text-nowrap">
-
-          <h1>R$ {{ produto.preco}}</h1>
-
+        <div class="col-md-3">
+          <h2>R$ {{ produto.preco}}</h2>
         </div>
-
       </div>
-
       <div class="row pt-3">
-
-        <div class="col-sm d-flex justify-content-center">
+        <div class="col-sm d-flex justify-content-center ">
 
           <div data-interval="false" id="carouselExampleFade" class="carousel carousel-fade img-fluid"
             data-ride="carousel">
@@ -56,96 +46,82 @@
 
         </div>
 
-        <div class="col-sm-12 row d-flex justify-content-around pt-5">
+      </div>
+      <div class="col-sm-12 row d-flex justify-content-center pt-5">
+        <div class="d-flex justify-content-between">
+          <div class="col-sm-6 mr-auto justify-content-center ">
+            <button (click)='favoritar()' type="button" class="button2" data-toggle="modal"
+              data-target="#ExemploModalCentralizado">
+              Favoritar
+            </button>
 
-          <div class="d-flex justify-content-center">
-
-            <div class="col-sm-4 d-flex justify-content-start">
-              <button (click)='favoritar()' type="button" class="button2" data-toggle="modal"
-                data-target="#ExemploModalCentralizado">
-                Favoritar
-              </button>
-
-            </div>
-
-            <div class="col-sm-4 d-flex justify-content-end">
-              <!--Botão PopUp-->
-              
-              <button (click)='comprar()' type="button" class="btn btn-primary btncomprar" data-toggle="modal"
-                data-target="#ModalLongoExemplo5">
-                Comprar
-              </button>
-            </div>
           </div>
-          <!--/Botão PopUp-->
 
-          <div class="modal fade " id="ModalLongoExemplo5" tabindex="-1" role="dialog"
-            aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div>
-                <!-- /Botão para acionar pop up de produto-->
-                <!--card Pop-Up-->
-                <div class="pt-0 estiloDoPopUp containerPopUp">
-                  <div class="pt-0">
-                    <h1 class="text1">Venda confirmada!</h1>
-                    <h2 class="text2">Combine com o vendedor a sua entrega!</h2>
+          <div class="col-sm-6 ">
+            <!--Botão PopUp-->
 
-                    <!--facebook-->
-                    <div>
-                      <img class="ico-contato " src="https://i.imgur.com/t3zXvGm.png" alt="Icone Facebook">
-                      <a class="textIco" href="https://www.facebook.com/"
-                        target="_blank">{{produto.usuario.nomeUsuario}}</a>
-                    </div>
-                    <!--/facebook-->
+            <button (click)='comprar()' type="button" class="btn btn-primary btncomprar" data-toggle="modal"
+              data-target="#ModalLongoExemplo5">
+              Comprar
+            </button>
+          </div>
+        </div>
 
-                    <!--telefone-->
-                    <div>
-                      <img class="ico-contato" src="https://i.imgur.com/RVVuzZa.png" alt="Icone Telefone">
-                      <a class="textIco"
-                        href="https://api.whatsapp.com/send?phone=5511910616756&text=Olá, gostaria de conhecer um pouco mais!"
-                        target="_blank">{{produto.usuario.telefone}}</a>
-                    </div>
-                    <!--/telefone-->
+        <!--/Botão PopUp-->
 
-                    <!--e-mail-->
-                    <div>
-                      <img class="ico-contato" src="https://i.imgur.com/JrO4uoS.png" alt="Icone E-mail">
-                      <a class="textIco" href="https://www.google.com" target="_blank">{{produto.usuario.emailUsuario}}</a>
-                    </div>
-                    <!--/e-mail-->
+        <div class="modal fade " id="ModalLongoExemplo5" tabindex="-1" role="dialog"
+          aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div>
+              <!-- /Botão para acionar pop up de produto-->
+              <!--card Pop-Up-->
+              <div class="pt-0 estiloDoPopUp containerPopUp d-flex justify-content-center">
+                <div class="pt-0 card-img-top">
+                  <h1 class="text1">Venda confirmada!</h1>
+                  <h2 class="text2">Combine com o vendedor a sua entrega!</h2>
 
-                    <div class=" col-sm-12 d-flex justify-content-center">
-                      <button type="button" class="btn btn-secondary button2" data-dismiss="modal">Retornar</button>
-
-                    </div>
+                  <!--facebook-->
+                  <div>
+                    <img class="ico-contato " src="https://i.imgur.com/t3zXvGm.png" alt="Icone Facebook">
+                    <a class="textIco" href="https://www.facebook.com/"
+                      target="_blank">{{produto.usuario.nomeUsuario}}</a>
                   </div>
+                  <!--/facebook-->
 
+                  <!--telefone-->
+                  <div>
+                    <img class="ico-contato" src="https://i.imgur.com/RVVuzZa.png" alt="Icone Telefone">
+                    <a class="textIco"
+                      href="https://api.whatsapp.com/send?phone=5511910616756&text=Olá, gostaria de conhecer um pouco mais!"
+                      target="_blank">{{produto.usuario.telefone}}</a>
+                  </div>
+                  <!--/telefone-->
+
+                  <!--e-mail-->
+                  <div>
+                    <img class="ico-contato" src="https://i.imgur.com/JrO4uoS.png" alt="Icone E-mail">
+                    <a class="textIco" href="https://www.google.com"
+                      target="_blank">{{produto.usuario.emailUsuario}}</a>
+                  </div>
+                  <!--/e-mail-->
+
+                  <div class=" col-sm-12 d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary button2" data-dismiss="modal">Retornar</button>
+
+                  </div>
                 </div>
 
               </div>
+
             </div>
+
           </div>
 
-          <!--/card Pop-Up-->
-
         </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-              <div class="text-justify pt-5">
 
-                <p>{{produto.descricao}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-
+      <p class="pt-3 text-justify ">{{produto.descricao}}</p>
     </div>
-
-
-
-
-    <!-- /formulario cadastro-->
   </div>
-</body>
+
+</div>

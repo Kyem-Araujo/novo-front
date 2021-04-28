@@ -22,7 +22,7 @@
                     <div class="label-float d-flex justify-content-center">
                         
                         <label for="EscolhaUmaCategoria">Escolha uma categoria*</label>
-                        <select class="form" name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria'>
+                        <select class="form" name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
                             <option *ngFor='let item of listaCategorias' value="{{item.idCategoria}}">
                                 {{item.departamento}}
                             </option>
@@ -72,7 +72,7 @@
                         alt="desenho de homem passando cartão na máquina">
                 </div>
                 <div class="label-float d-flex justify-content-end pt-3 px-5">
-                    <button (click)='alterarProduto()' type="button" class="btn btn-primary" data-toggle="modal"
+                    <button (click)='alterarProduto2()' type="button" class="btn btn-primary" data-toggle="modal"
                         data-target="#ExemploModalCentralizado">
                         Finalizar cadastro
                     </button>

@@ -40,7 +40,7 @@ export class ProdutoService {
   }
 
   deletarProduto(idProduto: number, cpf: string) {
-    return this.http.delete<Produto>(`http://localhost:8080/usuario/produto/${idProduto}/${cpf}`, this.token)
+    return this.http.delete<Produto>(`http://localhost:8080/usuario/produto/delete/${idProduto}/${cpf}`, this.token)
   }
 
   deletarProduto2(idProduto: number) {
@@ -49,5 +49,9 @@ export class ProdutoService {
 
   favoritar( produto: Produto, idProduto: number, cpf: string) {
     return this.http.put<Produto>(`http://localhost:8080/usuario/produto/${idProduto}/${cpf}`, produto, this.token)
+  }
+
+  alterarProduto2(produto: Produto): Observable<Produto>{
+    return this.http.put<Produto>('http://localhost:8080/produto', produto, this.token)
   }
 }
